@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="practiceCSS.css">
+    <link rel="html" href="practice2.html">
+</head>
+<body>
+
+<!-- NavBar & NavLinks -->
+    <div class="navbar  navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="#home" class="navbar-brand" onclick="openPage('home', this)" id="defaultOpen">Home</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item" onclick="openPage('countries', this)">
+                        <a href="#countries" class="nav-link">Countries</a>
+                    </li>
+                    <li class="nav-item" onclick="openPage('characters', this)">
+                        <a href="#characters" class="nav-link">Characters</a>
+                    </li>
+                    <li class="nav-item" onclick="openPage('elements', this)">
+                        <a href="#elements" class="nav-link">Elements</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<!-- MainContents -->
+
+    <div id="home" class="tabcontent">
+        <h1>Welcome Traveller</h1>
+    </div>
+    <div id="countries" class="tabcontent">
+        <a href="#mondstadt" onclick="openPage('mondstadt', this)">Mondstadt</a><br>
+        <a href="#liyue" onclick="openPage('liyue', this)">Liyue</a><br>
+        <a href="#inazuma" onclick="openPage('inazuma', this)">Inazuma</a><br>
+        <a href="#sumeru" onclick="openPage('sumeru', this)">Sumeru</a><br>
+        <a href="#fontaine" onclick="openPage('fontaine', this)">Fontaine</a><br>
+    </div>
+
+    <div id="characters" class="tabcontent">
+        <a href="#FourStarChar" onclick="openPage('FourStarChar', this)">4-Stars</a><br>
+        <a href="#FiveStarChar" onclick="openPage('FiveStarChar', this)">5-Stars</a><br>
+
+    </div>
+    <div id="elements" class="tabcontent">
+        <h1>Anemo</h1>
+        <h1>Geo</h1>
+        <h1>Electro</h1>
+        <h1>Dendro</h1>
+        <h1>Hydro</h1>
+        <h1>Pyro</h1>
+        <h1>Cryo</h1>
+        
+    </div>
+
+
+<!-- Countries -->
+
+    <div id="mondstadt" class="tabcontent">
+        <a href="#countries" onclick="openPage('countries', this)"> back </a>
+        <h1>MONDSTADT</h1>
+        <a href="#mondstadt-char" onclick="openPage('mondstadt-char', this)">Characters</a>
+    </div>
+
+    <div id="liyue" class="tabcontent">
+        <a href="#countries" onclick="openPage('countries', this)"> back </a>
+        <h1>LIYUE</h1>
+        <a href="#liyue-char" onclick="openPage('liyue-char', this)">Characters</a>
+    </div>
+
+    <div id="inazuma" class="tabcontent">
+        <a href="#countries" onclick="openPage('countries', this)"> back </a>
+        <h1>INAZUMA</h1>
+        <a href="#inazuma-char" onclick="openPage('inazuma-char', this)">Characters</a>
+    </div>
+
+    <div id="sumeru" class="tabcontent">
+        <a href="#countries" onclick="openPage('countries', this)"> back </a>
+        <h1>SUMERU</h1>
+        <a href="#sumeru-char" onclick="openPage('sumeru-char', this)">Characters</a>
+    </div>
+
+    <div id="fontaine" class="tabcontent">
+        <a href="#countries" onclick="openPage('countries', this)"> Countries </a>
+        <h1>SUMERU</h1>
+        <a href="#fontaine-char" onclick="openPage('fontaine-char', this)">Characters</a>
+    </div>
+
+<!--MapLinkToChar-->
+
+    <div id="mondstadt-char" class="tabcontent">
+        <a href="#mondstadt" onclick="openPage('mondstadt', this)"> back </a> <br>
+        <a href="practice2.html" onclick="openPage('jean', this)"> Jean </a>
+        <h1>Lisa</h1>
+        <h1>Eula</h1>
+    </div>
+
+    <div id="liyue-char" class="tabcontent">
+        <a href="#liyue" onclick="openPage('liyue', this)"> back </a>
+        <h1>Keqing</h1>
+        <h1>Hutao</h1>
+        <h1>Yelan</h1>
+    </div>
+
+    <div id="inazuma-char" class="tabcontent">
+        <a href="#inazuma" onclick="openPage('inazuma', this)"> back </a>
+        <h1>Ayaka</h1>
+        <h1>Yoimiya</h1>
+        <h1>Ei</h1>
+    </div>
+
+    <div id="sumeru-char" class="tabcontent">
+        <a href="#sumero" onclick="openPage('sumeru', this)"> back </a>
+        <h1>Nilou</h1>
+        <h1>Faruzan</h1>
+        <h1>Nahida</h1>
+    </div>
+
+    <div id="fontaine-char" class="tabcontent">
+        <a href="#fontaine" onclick="openPage('fontaine', this)"> back </a>
+        <h1>Navia</h1>
+        <h1>Furina</h1>
+        <h1>Chiori</h1>
+    </div>
+
+<!-- 4-Star -->
+    <div id="FourStarChar" class="tabcontent">
+        <a href="#characters" onclick="openPage('characters', this)"> back </a>
+        <h1>char1</h1>
+        <h1>char2</h1>
+        <h1>char3</h1>
+    </div>
+
+<!-- 5-Star -->
+    <div id="FiveStarChar" class="tabcontent">
+        <a href="#characters" onclick="openPage('characters', this)"> back </a>
+        <h1>char1</h1>
+        <h1>char2</h1>
+        <h1>char3</h1>
+    </div>
+
+    
+
+    <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();     
+    </script>
+    
+</body>
+</html>
