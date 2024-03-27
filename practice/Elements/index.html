@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Info Hub </title>
+
+    <link rel="stylesheet" href="../../exercises/bootstrap/bootstrap.min.css">
+
+    <script src="../../exercises/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="elements.css">
+    
+</head>
+<body>
+
+    <!-- NavBar & NavLinks -->
+    <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary p-0" id="head">
+        <div class="container-fluid">
+            <a href="../1practice.html#home" class="navbar-brand" onclick="showContent('home')">
+            <img src="../img/testIcon.jpeg" alt="Sample Icon" class="icon"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="../Characters/index.html#characters" class="nav-link" onclick="showContent('characters')">Characters</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="../Nation/index.html" class="nav-link" onclick="showContent('nation')">Nations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#elements" class="nav-link" onclick="showContent('elements')">Elements</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <section id="elements" class="content">
+        <h1>Anemo</h1>
+        <h1>Geo</h1>
+        <h1>Electro</h1>
+        <h1>Dendro</h1>
+        <h1>Hydro</h1>
+        <h1>Pyro</h1>
+        <h1>Cryo</h1>
+    </section>
+    
+    <script src="../1practice.js"></script>
+</body>
+</html>

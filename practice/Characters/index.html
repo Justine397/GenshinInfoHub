@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Info Hub </title>
+
+    <link rel="stylesheet" href="../../exercises/bootstrap/bootstrap.min.css">
+
+    <script src="../../exercises/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="character.css">
+    
+</head>
+<body>
+
+    <!-- NavBar & NavLinks -->
+    <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary p-0" id="head">
+        <div class="container-fluid">
+            <a href="../1practice.html#home" class="navbar-brand" onclick="showContent('home')">
+            <img src="../img/testIcon.jpeg" alt="Sample Icon" class="icon"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#characters" class="nav-link" onclick="showContent('characters')">Characters</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="../Nation/index.html#nation" class="nav-link" onclick="showContent('nation')">Nations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Elements/index.html#elements" class="nav-link" onclick="showContent('elements')">Elements</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Characters -->
+    <section id="characters" class="content">
+        <div class="container-fluid m-0">
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../1practice.html#home" onclick="showContent('home')"> Home </a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Characters</li>
+                </ol>
+            </nav>
+        </div>
+
+        <h2>All Characters</h2>
+        
+        <article class="CharArticle">
+            <header class="row">
+                <h6>Sort by</h6>
+                <div class="col-2">
+                    <nav id="rarity" class="navbar sticky-top bg-body-tertiary px-0 mb-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-expanded="false">Rarity</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#four" class="dropdown-item" onclick="smoothScroll(event)">4-Stars</a></li>
+                                    <li><a href="#five" class="dropdown-item" onclick="smoothScroll(event)">5-Stars</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-10">
+                    <div data-bs-spy="scroll" data-bs-target="#rarity" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                        <div id="four" class="mt-1">
+                            <div class="fs-3 fw-semibold ms-4 ">4-Stars</div>
+                            <div id="card-container1" class="cardContainer1"></div>             
+                        </div>
+                        <div id="five" class="mt-5">
+                            <div class="fs-3 fw-semibold ms-4">5-Stars</div>
+                            <div id="card-container2"></div> 
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </article>    
+    </section>
+
+    </section>
+    <script src="../1practice.js"></script>
+    <script src="CharacterCard.js"></script>
+</body>
+</html>
