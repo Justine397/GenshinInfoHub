@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbara</title>
+
+    <link rel="stylesheet" href="../../../bootstrap/bootstrap.min.css">
+
+    <script src="../../../bootstrap/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../../../mainCSS.css">
+    
+</head>
+<body>
+
+    <!-- NavBar & NavLinks -->
+    <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary p-0" id="head">
+        <div class="container-fluid">
+            <a href="../../../index.html#home" class="navbar-brand" onclick="showContent('home')">
+            <img src="../../../img/testIcon.jpeg" alt="Sample Icon" class="icon"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="../../../index.html#characters" class="nav-link" onclick="showContent('characters')">Characters</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="../../../index.html#nation" class="nav-link" onclick="showContent('nation')">Nations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../../index.html#elements" class="nav-link" onclick="showContent('elements')">Elements</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <section id="barbara" class="content">
+            <div class="container-fluid">
+                <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../../../index.html#home" onclick="showContent('home')"> Home </a></li>
+                        <li class="breadcrumb-item"><a href="../../../index.html#characters" onclick="showContent('characters')"> Characters </a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Barbara</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="CharMainContainer ">
+                <ul class="nav nav-tabs nav-fill" id="CharMain" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                    </li>
+                    <li class="nav-item" >
+                        <button class="nav-link" id="lore-tab" data-bs-toggle="tab" data-bs-target="#lore" type="button" role="tab" aria-controls="lore" aria-selected="true">Lore</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="voiceOver-tab" data-bs-toggle="tab" data-bs-target="#voiceOver" type="button" role="tab" aria-controls="voiceOver" aria-selected="true">Voice Over</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="true">Gallery</button>
+                    </li>
+                </ul> 
+                
+                <div class="tab-content" id="charContent">
+                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                        <h1>Overview</h1>
+                    </div>
+                    <div class="tab-pane fade" id="lore" role="tabpanel" aria-labelledby="lore-tab">
+                        <h1>Lore</h1>
+                    </div>
+                    <div class="tab-pane fade" id="voiceOver" role="tabpanel" aria-labelledby="voiceOver">
+                        <h1>Voice Over</h1>
+                    </div>
+                    <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+                        <h1>Gallery</h1>
+                    </div>
+                </div>
+
+            </div>  
+    </section>
+    
+    <script src="../../../mainJS.js"></script>
+</body>
+</html>
